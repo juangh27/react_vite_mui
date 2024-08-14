@@ -15,6 +15,8 @@ import Boxes_1 from './routes/Boxes';
 import DashBase from './routes/Dashboard';
 import Alltables from './routes/Tables';
 import Progress from './routes/Progress';
+import CardsMain from './routes/Cards';
+import ChartsMain from './routes/Charts';
 
 
 let router = createBrowserRouter([
@@ -40,6 +42,16 @@ let router = createBrowserRouter([
       {
         path: "progress/",
         element: <Progress />
+
+      },
+      {
+        path: "cards/",
+        element: <CardsMain />
+
+      },
+      {
+        path: "charts/",
+        element: <ChartsMain />
 
       },
     ],

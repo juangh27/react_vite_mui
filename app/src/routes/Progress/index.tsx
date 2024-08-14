@@ -2,12 +2,13 @@ import { CircularColor, CircularInd, CircularDet, CircularVal } from "./Circular
 import CircularInt from "./Interactive";
 
 import Divider from '@mui/material/Divider';
-import {  LinearBuf, LinearCol, LinearDef, LinearDet, LinearLab } from "./Linear";
+import { LinearBuf, LinearCol, LinearDef, LinearDet, LinearLab } from "./Linear";
 import DelayingAppearance from "./Delayed";
 
 export default function Progress() {
     return (
-        <><h1>Progress Elements</h1>
+        <>
+            <h1>Progress Elements</h1>
             <Divider>Circular default</Divider>
             <div>
                 <CircularInd />
@@ -17,7 +18,6 @@ export default function Progress() {
                 <CircularColor />
             </div>
             <div>
-
                 <Divider>Circular determinate</Divider>
                 <CircularDet />
             </div>

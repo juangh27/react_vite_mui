@@ -3,23 +3,23 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import PeopleIcon from '@mui/icons-material/People';
-import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import { Link } from 'react-router-dom';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import BackupTableIcon from '@mui/icons-material/BackupTable';
 import RefreshIcon from '@mui/icons-material/Refresh';
+import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
+import InsertChartOutlinedIcon from '@mui/icons-material/InsertChartOutlined';
+
+
 
 
 export const ListItems = (
     <React.Fragment>
         <ListItemButton component={Link} to="/">
             <ListItemIcon>
-                <DashboardIcon />
+                <DashboardOutlinedIcon />
             </ListItemIcon>
             <ListItemText primary="Dashboard" />
         </ListItemButton>
@@ -41,11 +41,17 @@ export const ListItems = (
             </ListItemIcon>
             <ListItemText primary="Progress" />
         </ListItemButton>
-        <ListItemButton component={Link} to="/test4">
+        <ListItemButton component={Link} to="/cards">
             <ListItemIcon>
                 <LayersIcon />
             </ListItemIcon>
-            <ListItemText primary="Test 4" />
+            <ListItemText primary="Cards" />
+        </ListItemButton>
+        <ListItemButton component={Link} to="/charts">
+            <ListItemIcon>
+                <InsertChartOutlinedIcon />
+            </ListItemIcon>
+            <ListItemText primary="Charts" />
         </ListItemButton>
     </React.Fragment>
 );
