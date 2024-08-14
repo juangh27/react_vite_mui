@@ -6,27 +6,15 @@ import ClippedDrawer from './SideBar'
 
 
 import {
-  Await,
   createBrowserRouter,
-  defer,
-  Form,
-  Link,
-  Outlet,
   RouterProvider,
-  useAsyncError,
-  useAsyncValue,
-  useFetcher,
-  useFetchers,
-  useLoaderData,
-  useNavigation,
-  useParams,
-  useRevalidator,
-  useRouteError,
+
 } from "react-router-dom";
 
-import Test1 from './SideBar/Test1';
-import Test2 from './SideBar/Test2';
-import Test3 from './SideBar/Test3';
+import Boxes_1 from './routes/Boxes';
+import DashBase from './routes/Dashboard';
+import Alltables from './routes/Tables';
+import Progress from './routes/Progress';
 
 
 let router = createBrowserRouter([
@@ -35,18 +23,23 @@ let router = createBrowserRouter([
     element: <ClippedDrawer />,
     children: [
       {
-        path: "test1/",
-        element: <Test1 />
+        path: "/",
+        element: <DashBase />
 
       },
       {
-        path: "test2/",
-        element: <Test2 />
+        path: "boxes/",
+        element: <Boxes_1 />
 
       },
       {
-        path: "test3/",
-        element: <Test3 />
+        path: "tables/",
+        element: <Alltables />
+
+      },
+      {
+        path: "progress/",
+        element: <Progress />
 
       },
     ],

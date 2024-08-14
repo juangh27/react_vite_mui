@@ -10,8 +10,12 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import { Link } from 'react-router-dom';
+import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
+import BackupTableIcon from '@mui/icons-material/BackupTable';
+import RefreshIcon from '@mui/icons-material/Refresh';
 
-export const mainListItems = (
+
+export const ListItems = (
     <React.Fragment>
         <ListItemButton component={Link} to="/">
             <ListItemIcon>
@@ -19,23 +23,23 @@ export const mainListItems = (
             </ListItemIcon>
             <ListItemText primary="Dashboard" />
         </ListItemButton>
-        <ListItemButton component={Link} to="/test1">
+        <ListItemButton component={Link} to="/boxes">
             <ListItemIcon>
-                <ShoppingCartIcon />
+                <CheckBoxOutlineBlankIcon />
             </ListItemIcon>
-            <ListItemText primary="Test 1" />
+            <ListItemText primary="Boxes" />
         </ListItemButton>
-        <ListItemButton component={Link} to="/test2">
+        <ListItemButton component={Link} to="/tables">
             <ListItemIcon>
-                <PeopleIcon />
+                <BackupTableIcon />
             </ListItemIcon>
-            <ListItemText primary="Test 2" />
+            <ListItemText primary="Tables" />
         </ListItemButton>
-        <ListItemButton component={Link} to="/test3">
+        <ListItemButton component={Link} to="/progress">
             <ListItemIcon>
-                <BarChartIcon />
+                <RefreshIcon />
             </ListItemIcon>
-            <ListItemText primary="Test 3" />
+            <ListItemText primary="Progress" />
         </ListItemButton>
         <ListItemButton component={Link} to="/test4">
             <ListItemIcon>
