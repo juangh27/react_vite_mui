@@ -1,10 +1,6 @@
 
 import './App.css'
 import ClippedDrawer from './SideBar'
-
-
-
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -17,6 +13,8 @@ import Alltables from './routes/Tables';
 import Progress from './routes/Progress';
 import CardsMain from './routes/Cards';
 import ChartsMain from './routes/Charts';
+import DateTimesPickers from './routes/DateTimePickers';
+
 
 
 let router = createBrowserRouter([
@@ -52,6 +50,11 @@ let router = createBrowserRouter([
       {
         path: "charts/",
         element: <ChartsMain />
+
+      },
+      {
+        path: "dates/",
+        element: <DateTimesPickers />
 
       },
     ],
