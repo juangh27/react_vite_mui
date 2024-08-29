@@ -19,37 +19,37 @@ import DateRangeOutlinedIcon from '@mui/icons-material/DateRangeOutlined';
 
 export const ListItems = (
     <React.Fragment>
-        <ListItemButton component={Link} to="/">
+        <ListItemButton component={Link} to="/dashboard1">
             <ListItemIcon>
                 <DashboardOutlinedIcon />
             </ListItemIcon>
             <ListItemText primary="Dashboard" />
         </ListItemButton>
-        <ListItemButton component={Link} to="/boxes">
+        <ListItemButton component={Link} to="/dashboard1/boxes">
             <ListItemIcon>
                 <CheckBoxOutlineBlankIcon />
             </ListItemIcon>
             <ListItemText primary="Boxes" />
         </ListItemButton>
-        <ListItemButton component={Link} to="/tables">
+        <ListItemButton component={Link} to="/dashboard1/tables">
             <ListItemIcon>
                 <BackupTableIcon />
             </ListItemIcon>
             <ListItemText primary="Tables" />
         </ListItemButton>
-        <ListItemButton component={Link} to="/progress">
+        <ListItemButton component={Link} to="/dashboard1/progress">
             <ListItemIcon>
                 <RefreshIcon />
             </ListItemIcon>
             <ListItemText primary="Progress" />
         </ListItemButton>
-        <ListItemButton component={Link} to="/cards">
+        <ListItemButton component={Link} to="/dashboard1/cards">
             <ListItemIcon>
                 <LayersIcon />
             </ListItemIcon>
             <ListItemText primary="Cards" />
         </ListItemButton>
-        <ListItemButton component={Link} to="/charts">
+        <ListItemButton component={Link} to="/dashboard1/charts">
             <ListItemIcon>
                 <InsertChartOutlinedIcon />
             </ListItemIcon>
@@ -63,7 +63,7 @@ export const secondaryListItems = (
         <ListSubheader component="div" inset>
 Others
         </ListSubheader>
-        <ListItemButton component={Link} to="/dates">
+        <ListItemButton component={Link} to="/dashboard1/dates">
             <ListItemIcon>
                 <DateRangeOutlinedIcon />
             </ListItemIcon>

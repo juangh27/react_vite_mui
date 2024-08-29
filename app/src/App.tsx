@@ -1,29 +1,36 @@
 
 import './App.css'
-import ClippedDrawer from './SideBar'
+import ClippedDrawer from './dashboard1/SideBar'
 import {
   createBrowserRouter,
   RouterProvider,
 
 } from "react-router-dom";
 
-import Boxes_1 from './routes/Boxes';
-import DashBase from './routes/Dashboard';
-import Alltables from './routes/Tables';
-import Progress from './routes/Progress';
-import CardsMain from './routes/Cards';
-import ChartsMain from './routes/Charts';
-import DateTimesPickers from './routes/DateTimePickers';
+import Boxes_1 from './dashboard1/routes/Boxes';
+import DashBase from './dashboard1/routes/Dashboard';
+import Alltables from './dashboard1/routes/Tables';
+import Progress from './dashboard1/routes/Progress';
+import CardsMain from './dashboard1/routes/Cards';
+import ChartsMain from './dashboard1/routes/Charts';
+import DateTimesPickers from './dashboard1/routes/DateTimePickers';
+import MarketingPage from './MainWeb/MarketingPage';
+import Dashboard from './dashboard2/Dashboard';
 
 
 
 let router = createBrowserRouter([
   {
     path: "/",
+    element: <MarketingPage />,
+  },
+  {
+
+    path: "/dashboard1",
     element: <ClippedDrawer />,
     children: [
       {
-        path: "/",
+        path: "/dashboard1",
         element: <DashBase />
 
       },
@@ -58,6 +65,13 @@ let router = createBrowserRouter([
 
       },
     ],
+    
+
+  },
+
+  {
+    path: "/dashboard2",
+    element: <Dashboard />,
   },
 ]);
  

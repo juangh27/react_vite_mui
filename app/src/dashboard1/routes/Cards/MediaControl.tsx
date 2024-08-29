@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
-import reptile from '../../assets/images/card/reptile.jpg'
+import reptile from '../../../assets/images/card/reptile.jpg'
 
 export default function CardMedControl() {
   const theme = useTheme();

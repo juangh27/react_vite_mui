@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import reptile from '../../assets/images/card/reptile.jpg'
+import reptile from '../../../assets/images/card/reptile.jpg'
 import { CardActionArea } from '@mui/material';
 
 const card = (

@@ -14,7 +14,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import paella from "../../assets/images/card/paella-1.jpg"
+import paella from "../../../assets/images/card/paella-1.jpg"
 
 
 interface ExpandMoreProps extends IconButtonProps {
